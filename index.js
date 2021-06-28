@@ -10,6 +10,10 @@ app.get('/1', (req, res) => {
     res.sendFile(path.join(__dirname, 'index1.html'));
 });
 
+app.get('/buttonclick.js', function (req, res) {
+    res.sendfile(__dirname + '/buttonclick.js');
+  });
+
 const PORT = process.env.PORT || 5000;
 
 
